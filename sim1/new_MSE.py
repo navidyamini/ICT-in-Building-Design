@@ -76,30 +76,30 @@ if __name__ == "__main__":
     density_train=50
     density_test = 174
     
-    file_name = "F:/Polito/ICTinBuildingdesign/Building_project/ouput3.txt"
+    file_name = "F:/Polito/ICTinBuildingdesign/Building_project/ouput1.txt"
     data = pd.read_csv(file_name)
     
     domain = data["density"]
     target_cooling = data["cooling"]
     target_heating = data["heating"]           
            
-    w_cooling,result_cooling,error1 = MSE(target_cooling ,domain,"cooling_sim3")
-    w_heating,result_heting,error2 = MSE(target_heating ,domain,"heating_sim3")
+    w_cooling,result_cooling,error1 = MSE(target_cooling ,domain,"cooling_sim1")
+    w_heating,result_heting,error2 = MSE(target_heating ,domain,"heating_sim1")
     
-    write_output(result_cooling,error1,"result_cooling_sim3",num_train,density_train)
-    write_output(result_heting,error2,"result_heating_sim3",num_train,density_train)
+    write_output(result_cooling,error1,"result_cooling_sim1",num_train,density_train)
+    write_output(result_heting,error2,"result_heating_sim1",num_train,density_train)
     
-    file_test = "F:/Polito/ICTinBuildingdesign/Building_project/ouput3_test.txt"
+    file_test = "F:/Polito/ICTinBuildingdesign/Building_project/ouput1_test.txt"
     testData = pd.read_csv(file_test)
     
     domain_test = testData["density"]
     target_cooling_test = testData["cooling"]
     target_heating_test = testData["heating"]
     
-    result_cooling_test,error1_test = test(target_cooling_test ,domain_test,w_cooling,"cooling_test 3")
-    result_heting_test,error2_test = test(target_heating_test ,domain_test,w_heating,"heating_test 3")
+    result_cooling_test,error1_test = test(target_cooling_test ,domain_test,w_cooling,"cooling_test 1")
+    result_heting_test,error2_test = test(target_heating_test ,domain_test,w_heating,"heating_test 1")
     
-    write_output(result_cooling_test,error1_test,"result_cooling_test 3",numb_test,density_test)
-    write_output(result_heting_test,error2_test,"result_heating_test 3",numb_test,density_test)
+    write_output(result_cooling_test,error1_test,"result_cooling_test 1",numb_test,density_test)
+    write_output(result_heting_test,error2_test,"result_heating_test 1",numb_test,density_test)
    
 
