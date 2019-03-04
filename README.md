@@ -1,2 +1,7 @@
 # ICT-in-Building-Design
 Simulating the energy consumption of the building in the summer and winter by using EnergyPlus for three different scenario and then use linear regression to predict the further situations.
+
+A smart building is the integration of building systems, technology and energy systems. Such systems may include building automation, life safety, telecommunication, user functions, materials selection for new construction and retrofitting. Smart buildings have positive impacts on both environment and energy, in particular if an ICT-controlled exchange between building energy systems and district grid is implemented. 
+ICT knowledge, integrated with a climate-responsive approach to building design, enables a better use of resources in buildings hence allowing for a better connection between locally generated renewable energy and the electricity grid helping cities to reduce their carbon emissions, consistently with three of the UN SDGs. 
+
+The course aims at providing an advanced understanding of topics with regards to ICT and smart building design as well as to enable students to acquire a specialised knowledge of selected aspects related to the integration between ICT systems and advanced building technologies. Furthermore, the course aims at allowing students in being able to understand and work with architectural and technological aspects connected to the building design.
